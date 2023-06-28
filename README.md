@@ -8,3 +8,4 @@ https://github.com/pushkart2/memorygame
 QbCore framework ofc.
 
 I plan on working on a version in which use ps-ui over time I just cba at the moment so. 
+Replace all your current files inside qb-jewelry with the files above. 
