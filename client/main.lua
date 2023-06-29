@@ -171,22 +171,23 @@ RegisterNetEvent('qb-jewellery:client:Thermite', function()
             TriggerServerEvent("evidence:server:CreateFingerDrop", GetEntityCoords(PlayerPedId()))
         end
         QBCore.Functions.TriggerCallback('qb-jewellery:server:getCops', function(cops)
-             if cops >= Config.RequiredCops then
+            if cops >= Config.RequiredCops then
                 PlantThermite()
                 exports['ps-ui']:Thermite(
                     function(success)
                         if success then
                     ThermiteEffect()
+                        QBCore.Functions.Notify("Security Disabled", "success")
                         else
-                    QBCore.Functions.Notify("Thermite failed..", "error")
+                    QBCore.Functions.Notify("Thermite Failed", "error")
                     end
                 end, 10, 5, 3)
             else
-                QBCore.Functions.Notify("Not enough police..", "error")
+                QBCore.Functions.Notify("Not enough cops on duty", "error")
             end
         end)
     else
-        QBCore.Functions.Notify("You are missing something(s)..", "error", 2500)
+        QBCore.Functions.Notify("You are missing some things", "error", 2500)
     end
 end)
 
