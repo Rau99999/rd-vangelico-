@@ -6,7 +6,7 @@ version '1.0.0'
 
 dependencies {
     'qb-target',
-    'memorygame'
+    'ps-ui'
 } 
 
 shared_script 'config.lua'
