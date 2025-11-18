@@ -11,3 +11,7 @@ QbCore framework ofc.
 
 plan on chsning it crom Pushkart's memory game to ps-ui in the future but im just kinda lazy
 To install just fhange all your files inside qb-jewelery easy as, make sure to enjoy it 
+
+IMPORTANT.
+Code still works on newer versions of QB-core all you need to do is change functions etc. Read below.
+This file will not be updated or maintained unless I feel like coming back to it and re-doing it over time, pull requests are still active etc. If you want to make changes feel open to and just make a pull request.
